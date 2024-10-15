@@ -7,10 +7,31 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1> Price Tracker</h1>
-    <p>Search for the best prices for Ralph Lauren</p>
-    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+  <div class="absolute">
+    <div class="absolute inset-0 justify-center">
+      <div class="bg-shapel bg-teal opacity-50 bg-blur"></div>
+      <div class="bg-shape2 bg-primary opacity-50 bg-blur"></div>
+      <div class="bg-shapel bg-purple opacity-50 bg-blur"></div>
+    </div>
+  </div>
 
+
+  
+  <a href="wishlist.html">
+  <div id="wishlistCartIcon">
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-shopping-cart">
+        <circle cx="9" cy="21" r="1"></circle>
+        <circle cx="20" cy="21" r="1"></circle>
+        <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+    </svg>
+    <!-- <span id="wishlistCount">0</span> -->
+</div>
+</a>
+    <h1> Price Tracker</h1>
+    <p>Track the Best Prices for Ralph Lauren</p>
+    <div id="resultsContainer"></div>
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+ 
 <div class="wrapper">
   <div class="searchBar">
     <input id="searchQueryInput" type="text" name="searchQueryInput" placeholder="Search" value="" />
@@ -19,8 +40,12 @@
       </svg>
     </button>
   </div>
+  <!-- <div id="wishlistContainer"></div> -->
+
 </div>
-    
+
+<div class="glassy-overlay"></div>
+<canvas></canvas>
     <script src="script.js"></script>
 </body>
 </html>
